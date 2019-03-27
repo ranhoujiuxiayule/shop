@@ -1,0 +1,32 @@
+.bt1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.tprice{
+	float: right;
+	width: 200px;
+	font-size: 30px;
+	color: red;
+	border: 1px solid #000000;
+	background: yellow;
+}
+.inputnum{
+	display: none;
+}
+.okbtn,.cancelbtn{display: none;}
+.nowp,.editbtn{
+	display: inline-block;
+}
+.ac .inputnum{
+	display: inline-block;
+}
+.ac .okbtn,.ac .cancelbtn{display: inline-block;}
+.ac .nowp,.ac .editbtn{
+	display: none;
+}
+#table{
+	text-align: center;
+}
+#table thead tr th{
+	text-align: center;
+}

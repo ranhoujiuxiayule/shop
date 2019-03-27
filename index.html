@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>平多多假货平台管理系统——首页</title>
+		
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid fixfull">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">平多多商城后台管理系统</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">其他页面</a></li>
+      </ul>
+      <button type="button" class="btn btn-info" id="shopcar">点我进入购物车</button>
+      <ul class="nav navbar-nav navbar-right disright">
+        <li id="lg"><a href="html/login.html">登录</a></li>
+        <li id="reg"><a href="html/register.html">注册</a></li>
+        <li id="welcom">欢迎您,<span id="myname"></span></li>
+        <li id="clear"><a href="javascript:;">退出</a></span></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<table class="table table-bordered">
+  <thead>
+  	<tr>
+  		<th>商品编号</th>
+  		<th>商品名称</th>
+  		<th>库存</th>
+  		<th>价格</th>
+  		<th>操作</th>
+  	</tr>
+  </thead>
+  <tbody id="tbody">
+  	<!--<tr>
+  		<td><span>1</span><input type="number" /></td>
+  		<td><span>Iphone66p</span><input type="text" /></td>
+  		<td><span>1</span><input type="number" /></td>
+  		<td><span>9.9</span><input type="number" /></td>
+  		<td><button type="button" class="btn btn-primary btn-xs editbtn">编辑</button>
+  			<button type="button" class="btn btn-warning btn-xs delbtn">删除</button>
+  			<button type="button" class="btn btn-success btn-xs okbtn">确定</button>
+  			<button type="button" class="btn btn-info btn-xs cancelbtn">取消</button>
+  		</td>
+  	</tr>-->
+  </tbody>
+  
+</table>
+<button type="button" class="btn btn-primary btn-lg lrbtn" data-toggle="modal" data-target="#myModal">
+  录入新商品
+</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">商品信息</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputname" class="col-sm-2 control-label">商品名称</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputname" placeholder="请输入商品名称">
+    </div>
+  </div>
+        <div class="form-group">
+    <label for="inputnum" class="col-sm-2 control-label">库存</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="inputnum" placeholder="请输入商品库存">
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="inputprice" class="col-sm-2 control-label">价格</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="inputprice" placeholder="请输入商品价格">
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" id="sava">保存并上传商品信息</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav aria-label="Page navigation">
+  <ul class="pagination" id="page-next">
+    <li id="prevp">
+      <a href="javascript:;" aria-label="Previous" class="prev">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <!--<li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>-->
+    <li id="nextp">
+      <a href="javascript:;" aria-label="Next" class="next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<script src="libs/tools.js"></script>;
+<script src="js/ifsbm.js"></script>;
+<script src="js/shop.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+.fixfull{
+	width: 80%;
+}
+.table-bordered{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+.table-bordered th{
+	text-align: center;
+}
+.lrbtn{
+	float: right;
+	margin-right: 153px;
+	margin-top: 10px;
+}
+table input{
+	display: none;
+}
+table .cancelbtn,table .okbtn{
+	display: none;
+}
+.edit input{
+	display: inline-block;
+}
+.edit span{
+	display: none;
+}
+.edit .cancelbtn,.edit .okbtn{
+	display: inline-block;
+}
+.edit .editbtn,.edit .delbtn{
+	display: none;
+}
+#welcom{
+	color: white;
+	line-height: 50px;
+	display: none;
+}
+#welcom span{
+	color: red;
+}
+#clear{
+	display: none;
+}
+#page-next{
+	margin-left: 150px;
+}
+#shopcar{
+	margin-top: 10px;
+	margin-left: 150px;
+}
